@@ -5,6 +5,7 @@ import volley from "./assets/volley.png";
 import cvanalytics from "./assets/cvanalytics.png";
 import gmail from "./assets/gmail.png";
 import linkedin from "./assets/linkedin.png";
+import github from "./assets/github.png";
 
 function App() {
 return (
@@ -20,32 +21,37 @@ return (
         </nav>
     </header>
 
-    {/* SOBRE MI */}
-    <section id="about" className="about">
-        <h1>Valentino Sanchez</h1>
-        <div className="about-container">
-        <img src={perfil} alt="Perfil" className="perfil" />
-        <div className="info">
-            <h3>Developer</h3>
-            <p>
-            Soy Valentino, estudiante orientado a la tecnología. Me gusta
-            transformar ideas en algo que pueda verse, usarse y disfrutarse.
-            Me interesa la programación, el diseño y el desarrollo web.
-            Me considero curioso, autodidacta y entusiasta del detalle.
-            Cada proyecto en el que trabajo es una forma de aprender algo nuevo.
-            </p>
-            <p>📍 Buenos Aires, Argentina</p>
-            <div className="icons">
-            <a href="https://github.com" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-linkedin"></i>
-            </a>
-            </div>
-        </div>
-        </div>
-    </section>
+{/* SOBRE MI */}
+<section id="about" className="about">
+  <h1 className="about-name">Valentino Sanchez</h1>
+  <div className="about-container">
+    <div className="left-side">
+      <img src={perfil} alt="Perfil" className="perfil" />
+      <h3 className="role">Developer</h3>
+      <div className="icons">
+        <a href="https://github.com" target="_blank" rel="noreferrer">
+          <img src={github} alt="GitHub" className="icon-img" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <img src={linkedin} alt="LinkedIn" className="icon-img" />
+        </a>
+      </div>
+    </div>
+
+    <div className="info">
+      <p>
+        Soy Valentino, estudiante orientado a la tecnología. Me gusta
+        transformar ideas en algo que pueda verse, usarse y disfrutarse.
+        Me interesa la programación, el diseño y el desarrollo web.
+        Me considero curioso, autodidacta y entusiasta del detalle.
+        Cada proyecto en el que trabajo es una forma de aprender algo nuevo.
+      </p>
+      <p className="location">📍 Buenos Aires, Argentina</p>
+    </div>
+  </div>
+</section>
+
+
 
     {/* PROYECTOS */}
     <section id="projects" className="projects">

@@ -44,43 +44,83 @@ background: #c7d9ff;
     transform: scale(1.15);
   }
 
+
+/*----------- Linea de lo correcto (no cambiar nada)---------------- */
+
+
 /* ABOUT */
 .about {
-text-align: center;
-padding: 80px 20px;
-}
+    padding: 100px 100px;
+    text-align: left;
+  }
+  
+  .about-name {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .perfil {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .role {
+    margin-top: 25px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  .icons {
+    margin-top: -20px;
+    display: flex;
+    gap: 60px;
+  }
+  
+  .icon-img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+  }
+  
+  .icon-img:hover {
+    transform: scale(1.15);
+  }
+  
+  .info {
+    flex: 2;
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  .location {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
 
-.about-container {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-gap: 40px;
-margin-top: 30px;
-}
 
-.perfil {
-width: 170px;
-height: 170px;
-border-radius: 50%;
-object-fit: cover;
-}
-
-.info {
-max-width: 500px;
-text-align: left;
-}
-
-.icons a {
-font-size: 24px;
-color: #111;
-margin-right: 15px;
-transition: 0.3s;
-}
-
-.icons a:hover {
-color: #0077ff;
-}
 
 /* PROJECTS */
 .projects {
