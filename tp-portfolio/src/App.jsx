@@ -23,7 +23,7 @@ return (
         <nav>
         <ul>
             <li><a href="#about">Sobre Mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#proyectos-anchor">Proyectos</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
         </nav>
@@ -60,56 +60,41 @@ return (
 </section>
 
 
+{/*Proyectos*/}
 
-    {/* PROYECTOS */}
-    <section id="projects" className="projects">
-        <h2>Proyectos</h2>
+<section id="proyectos" div className="proyectos">
+    <div id="proyectos-anchor" style={{ position: "relative", top: "-200px" }}></div>
 
-        <div className="cards">
-        {/* GymBro */}
-        <div className="card red">
-            <img src={gymbro} alt="GymBro" className="project-img" />
-            <h3>Proyecto: My GymBro</h3>
-            <p><strong>Rol:</strong> Diseñador UI/UX</p>
-            <p>
-            Diseño de la interfaz y experiencia de usuario para una aplicación
-            orientada a rutinas de gimnasio. Se buscó crear una interfaz clara,
-            intuitiva y motivadora.
-            </p>
+    {/* GymBro */}
+    <a href="#gymbro-anchor" className="project-link">
+        <div className="project-card project-red">
+            <img src={gymbro} alt="GymBro" className="project-logo" />
         </div>
+    </a>
 
-        {/* Volley Tactics */}
-        <div className="card blue">
-            <img src={volley} alt="Volley Tactics" className="project-img" />
-            <h3>Proyecto: Volley Tactics</h3>
-            <p><strong>Rol:</strong> Programador (Multijugador)</p>
-            <p>
-            Implementé la parte multijugador del juego en Unity usando Photon PUN 2.
-            Logré que los jugadores se conecten y jueguen partidas por turnos
-            sincronizadas sin errores.
-            </p>
+    {/* Volley Tactics */}
+    <a href="#volley-anchor" className="project-link">
+        <div className="project-card project-blue">
+            <img src={volley} alt="Volley Tactics" className="project-logo" />
         </div>
+    </a>
 
-        {/* CV Analytics */}
-        <div className="card gray">
-            <img src={cvanalytics} alt="CV Analytics" className="project-img" />
-            <h3>Proyecto: CV Analytics</h3>
-            <p><strong>Rol:</strong> Front-End Developer</p>
-            <p>
-            Desarrollé el front del sitio usando HTML, CSS y JavaScript.
-            Implementé diseño responsive, modo oscuro y funcionalidades simples
-            para una experiencia fluida.
-            </p>
+    {/* CV Analytics */}
+    <a href="#cv-anchor" className="project-link">
+        <div className="project-card project-gray">
+            <img src={cvanalytics} alt="CV Analytics" className="project-logo" />
         </div>
-        </div>
-    </section>
+    </a>
+
+</section>
 
 
 
 {/*SECCIONES PROYECTOS*/}
 
 {/* SECCIÓN DETALLADA - MYGYMBRO */}
-<section id="mygymbro-details" className="detail-section gymbro-detail">
+<section id="gymbro-section" className="detail-section gymbro-detail">
+  <div id="gymbro-anchor" style={{ position: "relative", top: "0px" }}></div>
     <div className="gymbro-logo-top">
       <img src={gymbro} className="gymbro-logo-img" />
     </div>
@@ -141,7 +126,8 @@ return (
 
 
 {/* SECCIÓN DETALLADA - VOLLEY TACTICS */}
-<section id="volley-details" className="volley-detail">
+<section id="volley-section" className="volley-detail">
+  <div id="volley-anchor" style={{ position: "relative", top: "-100px" }}></div>
 
     {/* LOGO CENTRADO */}
     <div className="volley-title-img">
@@ -200,8 +186,8 @@ return (
 
 
 {/* SECCIÓN DETALLADA - CV ANALYTICS */}
-<section id="cvanalytics-details" className="cvanalytics-detail">
-
+<section id="cv-section" className="cvanalytics-detail">
+  <div id="cv-anchor" style={{ position: "relative", top: "-100px" }}></div>
     {/* LOGO CENTRADO */}
     <div className="cvanalytics-title-img">
         <img src={cvanalytics} className="cvanalytics-logo" />
@@ -221,11 +207,11 @@ return (
     </p>
 
     <p className="cv-text-chunk">
-        La página cuenta con modo oscuro para la comodidad de los usuarios.
+        La página cuenta con modo oscuro para la comodidad de los usuarios
     </p>
 
     <p className="cv-text-chunk">
-        Funcionalidades simples y rápidas para mejorar la experiencia de usuario.
+        Funcionalidades simples y rápidas para mejorar la experiencia de usuario
     </p>
 </div>
 
@@ -241,14 +227,14 @@ return (
         <div className="cvanalytics-column">
             <img src={cvanalyticsup} className="cvanalytics-column-img" />
             <p className="cvanalytics-column-caption">
-                Subida de archivos y selección de formatos para analizar el CV.
+                Subida de archivos y selección de formatos para analizar el CV
             </p>
         </div>
 
         <div className="cvanalytics-column">
             <img src={cvanalyticsresult} className="cvanalytics-column-img" />
             <p className="cvanalytics-column-caption">
-                Comparación automática mediante IA y visualización del resultado.
+                Comparación automática mediante IA y visualización del resultado
             </p>
         </div>
 

@@ -5,6 +5,12 @@ color: #111;
 background: #c7d9ff;
 }
 
+/* GLOBAL SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* HEADER */
 .header {
     display: flex;
@@ -43,9 +49,6 @@ background: #c7d9ff;
   .header a:hover {
     transform: scale(1.15);
   }
-
-
-/*----------- Linea de lo correcto (no cambiar nada)---------------- */
 
 
 /* ABOUT */
@@ -123,51 +126,52 @@ background: #c7d9ff;
 
 
 /* PROJECTS */
-.projects {
-text-align: center;
-padding: 80px 20px;
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding-bottom: 60px; /* padding inferior */
 }
 
-.cards {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 30px;
-margin-top: 40px;
+/* TARJETAS */
+.project-card {
+    width: 260px;
+    height: 360px;
+    border-radius: 22px;
+    border: 5px solid #C0C0C0; /* borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
+    transition: transform 0.25s;
+    background: white;
 }
 
-.card {
-width: 320px;
-border-radius: 15px;
-color: #fff;
-padding: 20px;
-text-align: left;
-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
-transition: transform 0.2s;
+.project-card:hover {
+    transform: scale(1.05);
 }
 
-.card:hover {
-transform: scale(1.03);
+/* LOGOS */
+.project-logo {
+    width: 75%;
+    height: auto;
 }
 
-.red {
-color: #000000;
-background: linear-gradient(to bottom, #e11b22, #ad0000);
+/* COLORES DE FONDO */
+.project-red {
+    background: #d93636;
 }
 
-.blue {
-background: linear-gradient(to bottom, #0034b0, #001d5a);
+.project-blue {
+    background: #2b459e;
 }
 
-.gray {
-background: #f5f5f5;
-color: #222;
+.project-gray {
+    background: #f5f5f5;
 }
 
-.project-img {
-width: 100%;
-border-radius: 10px;
-}
+
 
 
 
@@ -179,7 +183,7 @@ border-radius: 10px;
     display: flex;
     justify-content: center;   /* centrar horizontal */
     margin-bottom: 60px;       /* separarlo del texto */
-    margin-top: 40px;          /* separarlo del borde superior */
+    margin-top: 150px;          /* separarlo del borde superior */
 }
 
 .gymbro-logo-img {
@@ -436,7 +440,7 @@ border-radius: 10px;
 
 .cvanalytics-column-caption {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     color: black;
     width: 90%;
