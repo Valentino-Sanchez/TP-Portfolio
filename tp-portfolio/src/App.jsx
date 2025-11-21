@@ -6,6 +6,8 @@ import cvanalytics from "./assets/cvanalytics.png";
 import gmail from "./assets/gmail.png";
 import linkedin from "./assets/linkedin.png";
 import github from "./assets/github.png";
+import mygymbro1 from "./assets/mygymbro1.png";
+import mygymbro2 from "./assets/mygymbro2.png";
 
 function App() {
 return (
@@ -95,6 +97,42 @@ return (
         </div>
         </div>
     </section>
+
+
+
+    {/* SECCIÓN DETALLADA - MYGYMBRO */}
+{/* SECCIÓN DETALLADA - MYGYMBRO */}
+<section id="mygymbro-details" className="detail-section gymbro-detail">
+    <div className="gymbro-logo-top">
+      <img src={gymbro} className="gymbro-logo-img" />
+    </div>
+
+    <div className="detail-content">
+        
+        <div className="text-block">
+            <h2>Proyecto: MyGymBro</h2>
+            <h3>Rol: Diseñador UI/UX</h3>
+
+            <p>
+                Diseño de la interfaz y experiencia de usuario para una aplicación orientada a la 
+                planificación y seguimiento de rutinas de gimnasio. Me enfoqué en crear una interfaz 
+                intuitiva, atractiva y fácil de usar, priorizando la claridad y la motivación del usuario.
+            </p>
+        </div>
+
+        <div className="image-block">
+            <img src={mygymbro1} className="detail-img" />
+        </div>
+    </div>
+
+    <div className="center-img">
+        <img src={mygymbro2} className="detail-img-small" />
+        <p className="caption">Investigación sobre ejercicios y diseño simple</p>
+    </div>
+
+</section>
+
+
 
     {/* CONTACTO */}
     <section id="contact" className="contact">

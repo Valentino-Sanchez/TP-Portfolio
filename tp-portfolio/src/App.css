@@ -169,6 +169,121 @@ width: 100%;
 border-radius: 10px;
 }
 
+
+
+
+/*MYGYMBRO*/
+
+.gymbro-logo-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* centrar horizontal */
+    margin-bottom: 60px;       /* separarlo del texto */
+    margin-top: 40px;          /* separarlo del borde superior */
+}
+
+.gymbro-logo-img {
+    width: 340px;              /* más grande */
+    max-width: 90%;            /* por si la pantalla es chica */
+}
+
+
+
+.gymbro-detail {
+    background: linear-gradient(
+            to bottom,
+            #c7d9ff 0%,
+            #E83D3D 30%
+        ),
+        linear-gradient(
+            to top,
+            #2B459E 0%,
+            #E83D3D 30%
+        ),
+        #E83D3D; /* color base del fondo, cambialo si querés */
+
+    background-repeat: no-repeat;
+    background-size: 100% 250px, 100% 250px, cover;
+    background-position: top, bottom, center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.detail-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    margin-left: 40px;
+}
+
+/* TEXTO */
+.text-block {
+    width: 35%;
+    font-size: 20px; /* más grande */
+    line-height: 1.7;
+    color: black;
+}
+
+.big-text {
+    font-size: 20px; /* texto explicativo más grande */
+}
+
+
+.detail-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;       /* Asegura ancho completo */
+    max-width: 100%;   /* Evita que se achique */
+}
+
+/* BLOQUE DE IMAGEN */
+.image-block {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end; /* empuja la imagen completamente a la derecha */
+    align-items: flex-start;
+    margin-left: auto; /* asegura que se vaya lo más a la derecha posible */
+    margin-top: 70px; /* la baja un poco */
+}
+
+/* Imagen grande */
+.detail-img {
+    width: 120%; 
+    max-width: 600px;
+    margin-right: 100px;
+}
+
+
+/* Imagen chica (gymbro2) */
+.detail-img-small {
+    width: 60%; /* mucho más chica */
+    border-radius: 6px;
+}
+
+.center-img {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 30px; /* ahora igual de grande */
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
 /* CONTACT */
 .contact {
 padding: 80px 20px;
