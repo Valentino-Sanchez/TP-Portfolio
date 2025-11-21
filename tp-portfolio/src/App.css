@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* HEADER */
 .header {
     display: flex;
@@ -19,7 +18,7 @@ html {
     position: sticky;
     top: 20px;
     z-index: 10;
-  
+
     background: #E0E0E0;
     border: 2px solid #000;
     border-radius: 40px;
@@ -27,101 +26,101 @@ html {
     margin: 20px auto;
     padding: 16px 90px; /* ⬅️ más espacio interno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header nav ul {
+}
+
+.header nav ul {
     display: flex;
     gap: 100px; /* ⬅️ más separación entre los links */
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .header a {
+}
+
+.header a {
     text-decoration: none;
     color: #111;
     font-weight: 600;
     font-size: 20px;
     transition: all 0.25s ease;
     display: inline-block;
-  }
-  
-  .header a:hover {
+}
+
+.header a:hover {
     transform: scale(1.15);
-  }
+}
 
 
 /* ABOUT */
 .about {
     padding: 100px 100px;
     text-align: left;
-  }
-  
-  .about-name {
+}
+
+.about-name {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 100px;
-  }
-  
-  .about-container {
+}
+
+.about-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 60px;
-  }
-  
-  .left-side {
+}
+
+.left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-  }
-  
-  .perfil {
+}
+
+.perfil {
     width: 220px;
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-  }
-  
-  .role {
+}
+
+.role {
     margin-top: 25px;
     font-size: 36px;
     font-weight: 600;
-  }
-  
-  .icons {
+}
+
+.icons {
     margin-top: -20px;
     display: flex;
     gap: 60px;
-  }
-  
-  .icon-img {
+}
+
+.icon-img {
     width: 45px;
     height: 45px;
     transition: transform 0.3s ease;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
-  }
-  
-  .icon-img:hover {
+}
+
+.icon-img:hover {
     transform: scale(1.15);
-  }
-  
-  .info {
+}
+
+.info {
     flex: 2;
     max-width: 700px;
     font-size: 20px;
     line-height: 1.8;
-  }
-  
-  .location {
+}
+
+.location {
     margin-top: 40px;
     font-size: 20px;
     font-weight: 500;
-  }
-  
+}
+
 
 
 
@@ -213,14 +212,6 @@ html {
     padding-bottom: 120px;
 }
 
-.detail-content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 60px;
-    max-width: 1100px;
-    margin-left: 40px;
-}
 
 /* TEXTO */
 .text-block {
@@ -239,8 +230,11 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;       /* Asegura ancho completo */
+    width: 95%;       /* Asegura ancho completo */
     max-width: 100%;   /* Evita que se achique */
+    margin-left: 0;
+    padding-left: 50px;
+    padding-right: 40px;
 }
 
 /* BLOQUE DE IMAGEN */
@@ -255,7 +249,7 @@ html {
 
 /* Imagen grande */
 .detail-img {
-    width: 120%; 
+    width: 100%; 
     max-width: 600px;
     margin-right: 100px;
 }
