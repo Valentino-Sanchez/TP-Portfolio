@@ -8,6 +8,9 @@ import linkedin from "./assets/linkedin.png";
 import github from "./assets/github.png";
 import mygymbro1 from "./assets/mygymbro1.png";
 import mygymbro2 from "./assets/mygymbro2.png";
+import volleystart from "./assets/volleystart.png";
+import volleychars from "./assets/volleychars.png";
+import volleygame from "./assets/volleygame.png";
 
 function App() {
 return (
@@ -100,7 +103,8 @@ return (
 
 
 
-    {/* SECCIÓN DETALLADA - MYGYMBRO */}
+{/*SECCIONES PROYECTOS*/}
+
 {/* SECCIÓN DETALLADA - MYGYMBRO */}
 <section id="mygymbro-details" className="detail-section gymbro-detail">
     <div className="gymbro-logo-top">
@@ -129,6 +133,64 @@ return (
         <img src={mygymbro2} className="detail-img-small" />
         <p className="caption">Investigación sobre ejercicios y diseño simple</p>
     </div>
+
+</section>
+
+
+
+{/* SECCIÓN DETALLADA - VOLLEY TACTICS */}
+<section id="volley-details" className="volley-detail">
+
+    {/* LOGO CENTRADO */}
+    <div className="volley-title-img">
+        <img src={volley} className="volley-logo" />
+    </div>
+
+    {/* FILA PRINCIPAL */}
+    <div className="volley-content">
+
+        {/* IZQUIERDA — TEXTO */}
+        <div className="volley-text-block">
+            <h2>Proyecto: Volley Tactics</h2>
+            <h3>Rol: Programador (Multijugador)</h3>
+
+            <p>
+                Me encargué de la parte multijugador del juego. Usé Unity y Photon PUN 2
+                para lograr que los jugadores puedan conectarse y jugar partidas por turnos
+                de forma sincronizada y sin errores.
+            </p>
+
+            <p>
+                También implementé la pantalla de selección de personajes, los menús
+                principales y la lógica para administrar reconexiones y sincronización
+                de estados.
+            </p>
+        </div>
+
+        {/* DERECHA — IMAGEN PRINCIPAL */}
+        <div className="volley-image-block">
+            <img src={volleystart} className="volley-img" />
+        </div>
+    </div>
+
+{/* IMÁGENES LADO A LADO */}
+<div className="volley-two-columns">
+
+    <div className="volley-column">
+        <img src={volleychars} className="volley-column-img" />
+        <p className="volley-column-caption">
+            Menús y selección de personajes — UI conectada al sistema multijugador
+        </p>
+    </div>
+
+    <div className="volley-column">
+        <img src={volleygame} className="volley-column-img" />
+        <p className="volley-column-caption">
+            Gameplay sincronizado mediante Photon PUN 2 — turnos y física local
+        </p>
+    </div>
+
+</div>
 
 </section>
 

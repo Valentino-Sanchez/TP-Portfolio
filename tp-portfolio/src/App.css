@@ -279,6 +279,85 @@ border-radius: 10px;
 
 
 
+/*SECCIÓN VOLLEYTACTICS*/
+
+.volley-detail {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(
+            to top,
+            #FFF 0%,
+            #2B459E 5%
+        ),
+        #2B459E;
+}
+
+/* LOGO */
+.volley-title-img {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.volley-logo {
+    width: 420px;
+}
+
+/* FILA PRINCIPAL */
+.volley-content {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.volley-text-block {
+    width: 40%;
+    font-size: 20px;
+    line-height: 1.7;
+    color: white;
+}
+
+.volley-image-block {
+    width: 45%;
+}
+
+.volley-img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* CONTENEDOR DE LAS DOS IMÁGENES */
+.volley-two-columns {
+    display: flex;
+    justify-content: center;
+    gap: 60px;           /* separación entre imágenes */
+    margin-top: 120px;
+}
+
+/* COLUMNA INDIVIDUAL */
+.volley-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;          /* ajustable */
+}
+
+/* IMÁGENES */
+.volley-column-img {
+    width: 100%;         /* ambas iguales */
+    border-radius: 8px;
+}
+
+/* DESCRIPCIÓN CENTRADA */
+.volley-column-caption {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
 
 
 
