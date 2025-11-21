@@ -284,12 +284,7 @@ border-radius: 10px;
 .volley-detail {
     width: 100%;
     padding: 100px 0;
-    background: linear-gradient(
-            to top,
-            #FFF 0%,
-            #2B459E 5%
-        ),
-        #2B459E;
+    background: #2B459E;
 }
 
 /* LOGO */
@@ -359,6 +354,93 @@ border-radius: 10px;
 }
 
 
+
+
+
+
+/*SECCIÓN CV ANALYTICS*/
+
+.cvanalytics-detail {
+
+    width: 100%;
+    padding: 200px 0 100px 0;  /* MÁS ESPACIO ARRIBA */
+    background: linear-gradient(
+            to bottom,
+            #2B459E 0%,
+            #f5f5f5 5%
+        ),
+        #F5F5F5
+}
+
+/* LOGO */
+.cvanalytics-title-img {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cvanalytics-logo {
+    width: 360px; /* un poco más grande para lucir bien */
+}
+
+/* FILA PRINCIPAL */
+.cvanalytics-content {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cvanalytics-text-block {
+    width: 40%;
+    font-size: 20px;
+    line-height: 1.7;
+    color: black;
+}
+.cv-text-chunk {
+    margin-bottom: 100px; /* separa cada fragmento */
+    font-size: 20px;
+    line-height: 1.7;
+    color: black;
+}
+
+.cvanalytics-image-block {
+    width: 50%;
+}
+
+.cvanalytics-img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* DOS IMÁGENES ABAJO */
+.cvanalytics-two-columns {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 120px;
+}
+
+/* COLUMNA */
+.cvanalytics-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.cvanalytics-column-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cvanalytics-column-caption {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    width: 90%;
+}
 
 
 

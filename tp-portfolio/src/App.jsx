@@ -11,6 +11,9 @@ import mygymbro2 from "./assets/mygymbro2.png";
 import volleystart from "./assets/volleystart.png";
 import volleychars from "./assets/volleychars.png";
 import volleygame from "./assets/volleygame.png";
+import cvanalyticsmain from './assets/cvanalyticsmain.png';
+import cvanalyticsup from './assets/cvanalyticsupload.png';
+import cvanalyticsresult from './assets/cvanalyticsresult.png';
 
 function App() {
 return (
@@ -133,7 +136,6 @@ return (
         <img src={mygymbro2} className="detail-img-small" />
         <p className="caption">Investigación sobre ejercicios y diseño simple</p>
     </div>
-
 </section>
 
 
@@ -191,7 +193,66 @@ return (
     </div>
 
 </div>
+</section>
 
+
+
+
+
+{/* SECCIÓN DETALLADA - CV ANALYTICS */}
+<section id="cvanalytics-details" className="cvanalytics-detail">
+
+    {/* LOGO CENTRADO */}
+    <div className="cvanalytics-title-img">
+        <img src={cvanalytics} className="cvanalytics-logo" />
+    </div>
+
+    {/* FILA PRINCIPAL */}
+    <div className="cvanalytics-content">
+
+        {/* IZQUIERDA — TEXTO */}
+        <div className="cvanalytics-text-block">
+    <h2>Proyecto: CV Analytics</h2>
+    <h3>Rol: Front-End Developer</h3>
+
+    <p className="cv-text-chunk">
+        Desarrollé el front del sitio web usando HTML, CSS y JavaScript. Me encargué del diseño responsivo,
+        la estructura del contenido, cuidando que todo se vea bien en distintos dispositivos.
+    </p>
+
+    <p className="cv-text-chunk">
+        La página cuenta con modo oscuro para la comodidad de los usuarios.
+    </p>
+
+    <p className="cv-text-chunk">
+        Funcionalidades simples y rápidas para mejorar la experiencia de usuario.
+    </p>
+</div>
+
+        {/* DERECHA — IMAGEN PRINCIPAL */}
+        <div className="cvanalytics-image-block">
+            <img src={cvanalyticsmain} className="cvanalytics-img" />
+        </div>
+    </div>
+
+    {/* DOS IMÁGENES INFERIORES */}
+    <div className="cvanalytics-two-columns">
+
+        <div className="cvanalytics-column">
+            <img src={cvanalyticsup} className="cvanalytics-column-img" />
+            <p className="cvanalytics-column-caption">
+                Subida de archivos y selección de formatos para analizar el CV.
+            </p>
+        </div>
+
+        <div className="cvanalytics-column">
+            <img src={cvanalyticsresult} className="cvanalytics-column-img" />
+            <p className="cvanalytics-column-caption">
+                Comparación automática mediante IA y visualización del resultado.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 
