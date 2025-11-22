@@ -187,7 +187,7 @@ return (
 
 {/* SECCIÓN DETALLADA - CV ANALYTICS */}
 <section id="cv-section" className="cvanalytics-detail">
-  <div id="cv-anchor" style={{ position: "relative", top: "-100px" }}></div>
+<div id="cv-anchor" style={{ position: "relative", top: "-100px" }}></div>
     {/* LOGO CENTRADO */}
     <div className="cvanalytics-title-img">
         <img src={cvanalytics} className="cvanalytics-logo" />
@@ -243,21 +243,42 @@ return (
 
 
 
-    {/* CONTACTO */}
-    <section id="contact" className="contact">
-        <h2>Contactame:</h2>
-        <div className="contact-icons">
-        <div className="contact-item">
-            <img src={gmail} alt="Gmail" />
-            <p>sanchezvalentino518@gmail.com</p>
+{/* CONTACTO */}
+
+<section id="contact" className="contact">
+    <h2>Contactame:</h2>
+
+    <div className="contact-box">
+
+        <div className="input-row">
+            <div className="input-group">
+                <label>Nombre:</label>
+                <input type="text" />
+            </div>
+
+            <div className="input-group">
+                <label>Apellido:</label>
+                <input type="text" />
+            </div>
         </div>
-        <div className="contact-item">
-            <img src={linkedin} alt="LinkedIn" />
-            <p>Valentino Sanchez</p>
+
+        <div className="input-group">
+            <label>Email:</label>
+            <input type="email" />
         </div>
+
+        <div className="input-group">
+            <label>Mensaje:</label>
+            <textarea rows="5"></textarea>
         </div>
-    </section>
+
     </div>
+
+    <button className="contact-btn">Mandar</button>
+</section>
+
+
+</div>
 );
 }
 
